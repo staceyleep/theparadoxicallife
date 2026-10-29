@@ -134,6 +134,13 @@ details[open] summary::after { content: "–"; }
 details p { color: var(--muted); padding-bottom: 20px; }
 details p + p { margin-top: -8px; }
 
+.contact-card { display: flex; flex-direction: column; align-items: center; }
+.contact-card h3 { min-height: 2.2rem; display: flex; align-items: center; justify-content: center; }
+.contact-card h3.email { font-size: clamp(0.95rem, 1.7vw, 1.2rem); white-space: nowrap; }
+.contact-card p { margin-bottom: 22px; }
+.contact-card .btn { margin-top: auto; }
+@media (max-width: 800px) { .contact-card h3.email { white-space: normal; overflow-wrap: anywhere; font-size: 1.1rem; } }
+
 /* Contact */
 .contact-box { background: var(--forest); color: #eef3ea; border-radius: 32px; padding: 60px 40px; text-align: center; }
 .contact-box h2 { color: #fff; }
