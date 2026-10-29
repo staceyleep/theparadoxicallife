@@ -134,6 +134,8 @@ details[open] summary::after { content: "–"; }
 details p { color: var(--muted); padding-bottom: 20px; }
 details p + p { margin-top: -8px; }
 
+.stack-card { display: flex; flex-direction: column; }
+.stack-card .card-action { margin-top: auto; padding-top: 22px; color: inherit; }
 .contact-card { display: flex; flex-direction: column; align-items: center; }
 .contact-card h3 { min-height: 2.2rem; display: flex; align-items: center; justify-content: center; }
 .contact-card h3.email { font-size: clamp(0.95rem, 1.7vw, 1.2rem); white-space: nowrap; }
